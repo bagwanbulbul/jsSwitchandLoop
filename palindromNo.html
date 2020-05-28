@@ -1,0 +1,20 @@
+<html>
+    <title>palindrom number</title>
+    <head>
+        <script>type = "text/javascript"
+                var user =(prompt("enter number"))
+                var num = Number(user)
+                var add = 0
+                for(var i=0; i<user.length; i++){
+                    var rema = num%10;
+                    var num = parseInt(num/10)
+                    add = add*10+rema
+                }
+                if(add == Number(user)){
+                    document.write(user+" :is palindrom number")
+                }else{
+                    document.write(user+" :is not palindrom number")
+                }
+        </script>
+    </head>
+</html>

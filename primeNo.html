@@ -3,14 +3,22 @@
     <head>
     <script>type = "tex/javascript"
         var user = Number(prompt("enter the number"))
+        console.log(typeof(user))
         var num = 2
-            while(num<=user){
-                if(user%num == 0){
-                    document.write(user+" is not prime: ")
-                num++
+        if(user==1){
+                document.write(user+" :is not prime")
+        }
+        while(num<=user){
+            if(user%num == 0){
+                document.write(user+" :is not prime")
                 break;
-                }
+            }else{
+                document.write(user+" :is prime")
+                break;
             }
+            num++
+        }
+            
     
     </script>
     </head>
