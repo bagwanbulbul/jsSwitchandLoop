@@ -4,6 +4,22 @@
         <script>type = "text/javascript"
                 var str1 = prompt("enter string");
                 var str2 = prompt("enter string");
+                var checkStr=0;
+                if(str1.length==str2.length){
+                    for(var i=0;i<str1.length;i++){
+                        for(var j=0;j<str2.length;j++){
+                            if(str1[i]==str2[j]){
+                                checkStr++;
+                            }
+                        }
+                    }
+                }
+                if(checkStr==0){
+                    document.write("sting is not anagram");
+                }else{
+                    document.write(str1+ " and "+str2 +" is anagram");
+                }
+
         </script>
     </head>
 </html>
