@@ -1,0 +1,26 @@
+<html>
+    <title>arithmatic calculator</title>
+    <head>
+        <script>type = "text/javascript"
+                var num1 = Number(prompt("enter th first number"))
+                var num2 = Number(prompt("enter the second number"))
+                var opration = (prompt("enter the opration"))
+                if(opration == "+"){
+                    var result = num1+num2;
+                    document.write("addition is: "+result)
+                }else if(opration == "-"){
+                    var result = num1-num2;
+                    document.write("subtraction is: "+result)
+                }else if(opration == "%"){
+                    var result = num1%num2
+                    document.write("divide is: "+result)
+                }else if(opration == "*"){
+                    var result = num1*num2;
+                    document.write("multiplication is: "+result)
+                }else{
+                    document.write("wrong entry")
+                }
+
+        </script>
+    </head>
+</html>
