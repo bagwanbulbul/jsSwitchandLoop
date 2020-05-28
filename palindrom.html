@@ -1,0 +1,18 @@
+<html>
+    <title>string palindrom</title>
+    <script>type = "text/javascript"
+        var user = prompt("enter the name")
+        var len = user.length
+        for(var i=0; i<=len; i++){
+            if(user[i]==user[len-1]){
+                console.log(user[i])
+                var str= "This is palindram string "
+            }else{
+                str = "This is not a palindrom string"
+                break
+            }
+            len=len-1
+        }
+        document.write(str)
+    </script>
+</html>

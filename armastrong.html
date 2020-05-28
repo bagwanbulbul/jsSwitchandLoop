@@ -1,0 +1,20 @@
+<html>
+    <title>armstrong number</title>
+    <head>
+        <script>type = "text/javascript"
+                var user =(prompt("enter number"))
+                var num = Number(user)
+                var add = 0
+                for(var i=0; i<user.length; i++){
+                    var rema = num%10;
+                    var num = parseInt(num/10)
+                    add = add+rema*rema*rema 
+                }
+                if(add == Number(user)){
+                    document.write("Armastrong number")
+                }else{
+                    document.write("not armastrong number")
+                }
+        </script>
+    </head>
+</html>
