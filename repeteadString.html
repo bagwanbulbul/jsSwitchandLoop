@@ -4,13 +4,16 @@
         <script>type="text/javascript"
                 var str = prompt("enter character");
                 var len = str.length;
+                var count = 0
                 for(var i=0; i<=len; i++){
                     for(var j=i+1; j<=len; j++){
                         if(str[j]==str[i]){
-                            document.write(str[i]+"<br />")
+                            count=count+1
+                            // document.write(str[i]+"<br />")
                         }
                     }  
                 }
+                document.write("total repeated character is: "+count)
         </script>
     </head>
 </html>

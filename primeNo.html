@@ -5,10 +5,14 @@
         var user = Number(prompt("enter the number"))
         console.log(typeof(user))
         var num = 2
-        if(user==1){
+        if(user==1 || user==0){
                 document.write(user+" :is not prime")
         }
-        while(num<=user){
+        if(user==2){
+            document.write(user+" :is prime")
+        }
+        
+        while(num<user){
             if(user%num == 0){
                 document.write(user+" :is not prime")
                 break;
